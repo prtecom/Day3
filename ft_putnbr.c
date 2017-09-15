@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_numbers1.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: probert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/04 14:54:16 by probert           #+#    #+#             */
-/*   Updated: 2017/09/15 11:13:44 by probert          ###   ########.fr       */
+/*   Created: 2017/09/08 15:18:44 by probert           #+#    #+#             */
+/*   Updated: 2017/09/08 15:33:43 by probert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<stdio.h>
-#include	<stdlib.h>
+int		ft_putchar(char c);
 
-void	ft_ft(int *n);
-
-int		main(void)
+void	ft_print_numbers(void)
 {
-	int n;
+	int i;
 
-	ft_ft(&n);
-	printf("Valeur de n %d \n", n);
-	return (0);
+	i = 0;
+	while (i <= 9)
+	{
+		ft_putchar(i+'0');
+		i++;
+	}
 }

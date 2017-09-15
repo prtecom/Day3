@@ -6,20 +6,14 @@
 /*   By: probert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/04 14:54:16 by probert           #+#    #+#             */
-/*   Updated: 2017/09/15 11:13:44 by probert          ###   ########.fr       */
+/*   Updated: 2017/09/08 12:04:30 by probert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<stdio.h>
-#include	<stdlib.h>
+#include <unistd.h>
 
-void	ft_ft(int *n);
-
-int		main(void)
+int		ft_putchar(char c)
 {
-	int n;
-
-	ft_ft(&n);
-	printf("Valeur de n %d \n", n);
+	write(1, &c, 1);
 	return (0);
 }

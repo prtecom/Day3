@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: probert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/04 14:54:16 by probert           #+#    #+#             */
-/*   Updated: 2017/09/15 11:13:44 by probert          ###   ########.fr       */
+/*   Created: 2017/09/15 13:40:25 by probert           #+#    #+#             */
+/*   Updated: 2017/09/15 15:15:33 by probert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<stdio.h>
-#include	<stdlib.h>
-
-void	ft_ft(int *n);
-
-int		main(void)
+void	ft_ultimate_ft(int *********nbr)
 {
-	int n;
-
-	ft_ft(&n);
-	printf("Valeur de n %d \n", n);
-	return (0);
+	*********nbr = 42;
 }
