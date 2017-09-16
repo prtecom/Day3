@@ -1,16 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: probert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/15 13:40:25 by probert           #+#    #+#             */
-/*   Updated: 2017/09/16 11:19:50 by probert          ###   ########.fr       */
+/*   Created: 2017/09/04 14:54:16 by probert           #+#    #+#             */
+/*   Updated: 2017/09/16 16:22:14 by probert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+#include	<stdio.h>
+#include	<stdlib.h>
+
+void	ft_putstr(char *str);
+void	ft_putchar(char c);
+
+int		main(void)
 {
-	*********nbr = 42;
+//	char string[];
+
+	char string[] = "Une chaine comme une autre";
+
+//	printf("Val string=%d \n", string);
+	ft_putstr(string);
+	ft_putchar('\n');
+	return (0);
 }

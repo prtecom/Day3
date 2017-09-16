@@ -1,16 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: probert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/15 13:40:25 by probert           #+#    #+#             */
-/*   Updated: 2017/09/16 11:19:50 by probert          ###   ########.fr       */
+/*   Created: 2017/09/04 14:54:16 by probert           #+#    #+#             */
+/*   Updated: 2017/09/16 12:49:20 by probert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+#include	<stdio.h>
+#include	<stdlib.h>
+
+void	ft_ultimate_div_mod(int *a, int *b);
+
+int		main(void)
 {
-	*********nbr = 42;
+	int a;
+	int b;
+
+	a = 42;
+	b = 2;
+
+	printf("Val a = %d, b = %d \n", a, b);
+	ft_ultimate_div_mod(&a, &b);
+	printf("Val a = %d, b = %d \n", a, b);
+	return (0);
 }

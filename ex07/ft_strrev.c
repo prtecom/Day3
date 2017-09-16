@@ -1,16 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: probert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/15 13:40:25 by probert           #+#    #+#             */
-/*   Updated: 2017/09/16 11:19:50 by probert          ###   ########.fr       */
+/*   Created: 2017/09/16 18:01:33 by probert           #+#    #+#             */
+/*   Updated: 2017/09/16 18:48:37 by probert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+char	ft_strrev(char *str)
 {
-	*********nbr = 42;
+	int l;
+	int i;
+	char cstr = *str;
+
+	l = 0;
+	i = 0;
+	while (str[l] != '\0')
+		l++;
+	if (l == 1)
+		return (str[l - 1]);
+	else 
+	{	
+		while (i < l)
+		{
+			cstr[i] = str[l - 1];
+			i++;
+		}
+		return(cstr);
+	}
 }

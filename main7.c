@@ -1,16 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: probert <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/15 13:40:25 by probert           #+#    #+#             */
-/*   Updated: 2017/09/16 11:19:50 by probert          ###   ########.fr       */
+/*   Created: 2017/09/04 14:54:16 by probert           #+#    #+#             */
+/*   Updated: 2017/09/16 18:55:36 by probert          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+#include	<stdio.h>
+#include	<stdlib.h>
+
+char	ft_strrev(char *str);
+
+int		main(void)
 {
-	*********nbr = 42;
+	char str[] = "abcde";
+
+	*str = &a;
+
+	printf("Val a = %c \n", ft_strrev(str));
+	return (0);
 }
